@@ -1,0 +1,32 @@
+.container {
+    display: flex block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+h1 {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-block-start: 4vh;
+    margin-block-end: 3vh;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+h3 {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 4vh;
+}
