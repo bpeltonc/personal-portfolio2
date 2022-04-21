@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
-
 .main-container {
-  font-family: 'Roboto', sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   margin: 0;
   min-height: 100vh;
   background-color: black;
@@ -14,5 +9,12 @@
   flex-direction: column;
 }
 
-
-
+.about-section {
+  height: 100vh;
+}
+.portfolio-section {
+  height: 100vh;
+}
+.contact-section {
+  height: 100vh;
+}

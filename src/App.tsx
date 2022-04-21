@@ -1,14 +1,30 @@
 import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
+import About from './routes/about';
+import Portfolio from './routes/portfolio';
+import Contact from './routes/contact';
 
 import "./App.css"
+import React from 'react';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="main-container">
-      <Header />
-      <NavBar />
-    </div>
+    <React.Fragment>
+      <div className="main-container">
+        <Header />
+        <NavBar />
+      </div>
+      <div className='about-section' id='about'>
+        <About />
+      </div>
+      <div className='portfolio-section' id='portfolio'>
+        <Portfolio />
+      </div>
+      <div className='contact-section' id='contact'>
+        <Contact />
+      </div>
+    </React.Fragment>
   );
 }
 
