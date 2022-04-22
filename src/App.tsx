@@ -12,7 +12,7 @@ const App = () => {
   return (
     <React.Fragment>
       <div className="main-container">
-        <Header />
+        <Header title='Brandon Pelton-Cox' subtitle='Full-Stack Software Developer' color='white'/>
         <NavBar />
       </div>
       <div className='about-section' id='about'>

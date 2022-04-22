@@ -1,19 +1,21 @@
-import { Link, animateScroll as scroll } from "react-scroll"
+import React from "react"
+import Header from "../components/Header/Header"
+import NavBar from "../components/NavBar/NavBar"
+import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton"
+
+import "./about.css"
 
 const About: React.FC = () => {
     return (
-        <div>   
-            <h2>About</h2>
-            <Link
-                to="home"
-                activeClass="active"
-                spy={true}
-                hashSpy={true}
-                smooth={true}
-                duration={500}
-                delay={250}
-                onClick={scroll.scrollToTop}><button>^</button></Link>
-        </div>
+        <React.Fragment>
+            <div className="about-heading-container">
+                <Header title="About" color="black" />
+                <NavBar />
+            </div>
+            <div className="about-content-container">
+                <ScrollToTopButton />
+            </div>
+        </React.Fragment>
     )
 }
 

@@ -1,0 +1,25 @@
+.about-heading-container {
+    display: flex;
+    justify-content: flex-start;
+    height: 10vh;
+}
+
+.about-content-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 90vh;
+
+}
+
+button {
+    color: white;
+    margin: 3rem;
+    border-radius: 10rem;
+}
+
+h1 {
+    color: black;
+    margin: 0;
+    padding: 1rem;
+}
