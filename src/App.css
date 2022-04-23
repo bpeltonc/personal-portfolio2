@@ -11,10 +11,16 @@
 
 .about-section {
   height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100vw;
+  flex-wrap: wrap;
 }
 .portfolio-section {
   height: 100vh;
+  display: flex;
 }
 .contact-section {
   height: 100vh;
+  display: flex;
 }
