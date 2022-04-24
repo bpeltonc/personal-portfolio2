@@ -5,15 +5,14 @@ import Portfolio from './routes/portfolio';
 import Contact from './routes/contact';
 
 import "./App.css"
-import React from 'react';
 
 
 const App = () => {
   return (
-    <React.Fragment>
+    <div className='wrapper'>
       <div className="main-container">
         <Header title='Brandon Pelton-Cox' subtitle='Full-Stack Software Developer' color='white'/>
-        <NavBar />
+        <NavBar dark={true} />
       </div>
       <div className='about-section' id='about'>
         <About />
@@ -24,7 +23,7 @@ const App = () => {
       <div className='contact-section' id='contact'>
         <Contact />
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

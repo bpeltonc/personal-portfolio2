@@ -10,7 +10,7 @@ const About: React.FC = () => {
         <React.Fragment>
             <div className="about-heading-container">
                 <Header title="About" color="black" />
-                <NavBar />
+                <NavBar dark={false}/>
             </div>
             <div className="about-content-container">
                 <ScrollToTopButton />

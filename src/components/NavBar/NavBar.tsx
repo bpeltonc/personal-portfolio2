@@ -3,7 +3,11 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import "./NavBar.css";
 
-const NavBar: React.FC = () => {
+type Props = {
+    dark: boolean;
+}
+
+const NavBar: React.FC<Props> = ({dark}) => {
     return (
         <nav className="navBar">
             <Link 
@@ -15,28 +19,28 @@ const NavBar: React.FC = () => {
             duration={500}
             delay={250}
             onClick={scroll.scrollToTop}
-            ><NavElement title="Home"/></Link>
+            ><NavElement title="Home" dark={dark}/></Link>
             <Link to="about"
             activeClass="active"
             spy={true}
             hashSpy={true}
             smooth={true}
             duration={500}
-            delay={250}><NavElement title="About"/></Link>
+            delay={250}><NavElement title="About" dark={dark}/></Link>
             <Link to="portfolio"
             activeClass="active"
             spy={true}
             hashSpy={true}
             smooth={true}
             duration={500}
-            delay={250}><NavElement title="Portfolio"/></Link>
+            delay={250}><NavElement title="Portfolio" dark={dark}/></Link>
             <Link to="contact"
             activeClass="active"
             spy={true}
             hashSpy={true}
             smooth={true}
             duration={500}
-            delay={250}><NavElement title="Contact"/></Link>
+            delay={250}><NavElement title="Contact" dark={dark}/></Link>
         </nav>
     )
 }
