@@ -1,24 +1,15 @@
-import Header from './components/Header/Header';
-import NavBar from './components/NavBar/NavBar';
+import Home from './routes/home/home';
 import About from './routes/about';
 import Portfolio from './routes/portfolio';
 import Contact from './routes/contact';
 
 import "./App.css"
-import Card from './components/Card/Card';
-
 
 const App = () => {
   return (
     <div className='wrapper'>
-      <div className="main-container">
-        <Header title='Brandon Pelton-Cox' subtitle='Full-Stack Software Developer' color='white'/>
-        <NavBar dark={true} />
-        <div className='carousel'>
-          <Card />
-          <Card />
-          <Card />
-        </div>
+      <div className='home-section' id='home'>
+        <Home />
       </div>
       <div className='about-section' id='about'>
         <About />

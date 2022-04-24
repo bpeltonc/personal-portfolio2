@@ -4,27 +4,16 @@
   padding: 0;
 }
 
-
-.main-container {
-  margin: 0;
-  min-height: 100vh;
-  background-color: black;
-  background: no-repeat center/100% url('./assets/home_background.avif');
+.home-section {
+  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
-}
-
-.carousel {
-  display: flex;
 }
 
 .about-section {
   height: 100vh;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
 }
 .portfolio-section {
   height: 100vh;
