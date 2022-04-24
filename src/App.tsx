@@ -5,6 +5,7 @@ import Portfolio from './routes/portfolio';
 import Contact from './routes/contact';
 
 import "./App.css"
+import Card from './components/Card/Card';
 
 
 const App = () => {
@@ -13,6 +14,11 @@ const App = () => {
       <div className="main-container">
         <Header title='Brandon Pelton-Cox' subtitle='Full-Stack Software Developer' color='white'/>
         <NavBar dark={true} />
+        <div className='carousel'>
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
       <div className='about-section' id='about'>
         <About />
